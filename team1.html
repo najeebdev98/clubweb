@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Our Team Page HTML Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Our Team Page HTML Template" name="keywords">
+        <meta content="Our Team Page HTML Template" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+        
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+        <!-- Template Style sheet -->
+        <link href="style1.css" rel="stylesheet">
+
+<!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>mpcodingclub</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+   <link rel="stylesheet" href="css/preloader.css">
+   
+
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
+
+
+
+
+    </head>
+
+    <body>
+
+
+    <!-- Preloader
+   ================================================== -->
+    <div id="loader-wrapper">
+
+    <div class="entry-header">
+      <h1 class="entry-title">M P Coding Club</h1>
+      <div id="bottom-quote">
+        <script>
+          var quote = "";
+          var xhttp = new XMLHttpRequest();
+          xhttp.open("GET", "https://quota.glitch.me/random", true); //free quote api
+          xhttp.send(null);
+          xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+              quote = new String(xhttp.responseText);
+              finalString = quote.substring(14).replace("quoteAuthor", "").replace(/"/g, "").replace('.,:', ' Author: ').replace("}", "");
+              //make the string prettier
+              $('#rand-quote').text(finalString);
+            }
+          };
+        </script>
+        <div class="blockquote text-white" id="rand-quote" style="position:relative; top: 20em;"></div>
+        <div class="blockquote text-white" id="rand-author" style="position:relative; top: 21em;"></div>
+      </div>
+    </div>
+
+    <div id="loader">
+    </div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+
+  </div>
+
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+	         <li><a class="smoothscroll" href="#courses">Courses</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Projects</a></li>
+            <li><a class="" href="team1.html">Team</a></li>
+            <li><a target="" href="https://docs.google.com/forms/d/e/1FAIpQLSesyqgx6qLh0Ic8EtQLeSDlbREdFbOqjDCrgmCHGjKgfGYHVg/viewform?usp=sf_link">Feedback</a></li>
+            
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+
+   </header> 
+
+<!-- Header End -->
+        
+        <!-- Team #5 Start -->
+        <div class="container">
+            <div class="section-title">
+                <h1>Our Team</h1>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="team-5">
+                        <div class="team-img">
+                            <img src="img/team-1-1.jpg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Md Najeeb</h2>
+                            <h3>Co-Founder</h3>
+                            <p></p>
+                            <h4>najeebdbg907@gmail.com</h4>
+                        </div>
+                        <div class="team-social">
+                            <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="social-fb" href="https://www.facebook.com/md.najeeb.52035772"><i class="fab fa-facebook-f"></i></a>
+                            <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="social-yt" href=""><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-5">
+                        <div class="team-img">
+                            <img src="img/team-1-2.jpg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Mollie Ross</h2>
+                            <h3>Art Director</h3>
+                            <p></p>
+                            <h4>example@example.com</h4>
+                        </div>
+                        <div class="team-social">
+                            <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="social-yt" href=""><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-5">
+                        <div class="team-img">
+                            <img src="img/team-1-3.jpg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Dylan Adams</h2>
+                            <h3>Developer</h3>
+                            <p></p>
+                            <h4>example@example.com</h4>
+                        </div>
+                        <div class="team-social">
+                            <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="social-yt" href=""><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-5">
+                        <div class="team-img">
+                            <img src="img/team-1-4.jpg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Jennifer Page</h2>
+                            <h3>Designer</h3>
+                            <p></p>
+                            <h4>example@example.com</h4>
+                        </div>
+                        <div class="team-social">
+                            <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="social-yt" href=""><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!-- Team #5 End -->
+        
+
+
+<!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+               <li><a target="" href=""><i class="fa fa-facebook"></i></a></li>
+               <li><a target="" href="https://www.instagram.com/mpcodingclub/"><i class="fa fa-instagram"></i></a></li>
+               <li><a target="" href="https://github.com/mpcodingclub"><i class="fa fa-github"></i></a></li>
+               <li><a target="" href=""><i class="fa fa-linkedin"></i></a></li>
+               <li><a target="" href="https://www.youtube.com/channel/UCYyry7e_by-d8Ern1rtvN2g"><i class="fa fa-youtube"></i></a></li>
+
+            </ul>
+
+             <ul class="copyright">
+               <li> &copy; Copyright 2020</li>
+               <li>Design by <a href="index.html" title="Styleshout" target="">mpcodingclub</a></li>   
+            </ul> 
+
+         </div>
+
+        <!-- <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>-->
+
+      </div>
+
+   </footer> <!-- Footer End-->
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+
+   <script type="text/javascript">
+      $(document).ready(function () {
+          setTimeout(function () {
+            $('body').addClass('loaded');
+            $('#loader-wrapper').remove(); //no need to continue displaying the preloader, wastes cpu.
+          }, 2000);
+        });
+   </script>
+
+
+
+    </body>
+</html>

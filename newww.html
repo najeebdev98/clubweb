@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en"> 
+<head>
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>mpcodingclub</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+   <link rel="stylesheet" href="css/preloader.css">
+   <link rel="stylesheet" href="style.css">
+   
+
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
+
+</head>
+
+<body>
+
+    <!-- Preloader
+   ================================================== -->
+    <div id="loader-wrapper">
+
+    <div class="entry-header">
+      <h1 class="entry-title">M P Coding Club</h1>
+      <div id="bottom-quote">
+        <script>
+          var quote = "";
+          var xhttp = new XMLHttpRequest();
+          xhttp.open("GET", "https://quota.glitch.me/random", true); //free quote api
+          xhttp.send(null);
+          xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+              quote = new String(xhttp.responseText);
+              finalString = quote.substring(14).replace("quoteAuthor", "").replace(/"/g, "").replace('.,:', ' Author: ').replace("}", "");
+              //make the string prettier
+              $('#rand-quote').text(finalString);
+            }
+          };
+        </script>
+        <div class="blockquote text-white" id="rand-quote" style="position:relative; top: 20em;"></div>
+        <div class="blockquote text-white" id="rand-author" style="position:relative; top: 21em;"></div>
+      </div>
+    </div>
+
+    <div id="loader">
+    </div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+
+  </div>
+
+   <!-- Header
+   ================================================== -->
+  
+
+      
+
+
+
+
+
+
+<div class="contact-section" >
+
+  <h1>mpcodingclub<h1>
+  <h2>Your Feedback is Important for us</h2><br>
+  <form class="contact-form"   "https://docs.google.com/forms/u/1/d/e/1FAIpQLSesyqgx6qLh0Ic8EtQLeSDlbREdFbOqjDCrgmCHGjKgfGYHVg/formResponse" target="_self"   method="POST">
+
+    <input type="text" class="contact-form-text" placeholder="Enter Your Name....." required>
+    <input type="email" class="contact-form-text" placeholder="Enter Your Email....." required value="">
+	<textarea class="subject" name="subject" placeholder="Your Feedback....." style="height:200px"></textarea>
+   <!-- <input type="message-box" class="contact-form-message-box" placeholder="Your Message" required>
+    <input type="text" class="contact-form-text" placeholder="Your Institute Name" required>
+	<input type="text" class="contact-form-text" placeholder="Your Present Course" required>
+	<input type="text" class="contact-form-text" placeholder="Enter Your City Name" required>
+	--> 
+    
+	
+	
+    <input type="submit" class="contact-form-btn" value="Send">
+  </form>
+</div>
+
+
+
+
+
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+               <li><a target="" href=""><i class="fa fa-facebook"></i></a></li>
+               <li><a target="" href="https://www.instagram.com/mpcodingclub/"><i class="fa fa-instagram"></i></a></li>
+               <li><a target="" href="https://github.com/mpcodingclub"><i class="fa fa-github"></i></a></li>
+               <li><a target="" href=""><i class="fa fa-linkedin"></i></a></li>
+               <li><a target="" href="https://www.youtube.com/channel/UCYyry7e_by-d8Ern1rtvN2g"><i class="fa fa-youtube"></i></a></li>
+
+            </ul>
+
+             <ul class="copyright">
+               <li> &copy; Copyright 2020</li>
+               <li>Design by <a href="index.html" title="Styleshout" target="">mpcodingclub</a></li>   
+            </ul> 
+
+         </div>
+
+        <!-- <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>-->
+
+      </div>
+
+   </footer> <!-- Footer End-->
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+
+   <script type="text/javascript">
+      $(document).ready(function () {
+          setTimeout(function () {
+            $('body').addClass('loaded');
+            $('#loader-wrapper').remove(); //no need to continue displaying the preloader, wastes cpu.
+          }, 2000);
+        });
+   </script>
+
+</body>
+
+</html>

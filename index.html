@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en"> 
+<head>
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>mpcodingclub</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+   <link rel="stylesheet" href="css/preloader.css">
+   
+
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
+
+</head>
+
+<body>
+
+    <!-- Preloader
+   ================================================== -->
+    <div id="loader-wrapper">
+
+    <div class="entry-header">
+      <h1 class="entry-title">M P Coding Club</h1>
+      <div id="bottom-quote">
+        <script>
+          var quote = "";
+          var xhttp = new XMLHttpRequest();
+          xhttp.open("GET", "https://quota.glitch.me/random", true); //free quote api
+          xhttp.send(null);
+          xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+              quote = new String(xhttp.responseText);
+              finalString = quote.substring(14).replace("quoteAuthor", "").replace(/"/g, "").replace('.,:', ' Author: ').replace("}", "");
+              //make the string prettier
+              $('#rand-quote').text(finalString);
+            }
+          };
+        </script>
+        <div class="blockquote text-white" id="rand-quote" style="position:relative; top: 20em;"></div>
+        <div class="blockquote text-white" id="rand-author" style="position:relative; top: 21em;"></div>
+      </div>
+    </div>
+
+    <div id="loader">
+    </div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+
+  </div>
+
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+	         <li><a class="smoothscroll" href="#courses">Courses</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Projects</a></li>
+            <li><a class="" href="team1.html">Team</a></li>
+            <li><a target="" href="https://docs.google.com/forms/d/e/1FAIpQLSesyqgx6qLh0Ic8EtQLeSDlbREdFbOqjDCrgmCHGjKgfGYHVg/viewform?usp=sf_link">Feedback</a></li>
+            
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">mpcodingclub</h1>
+            <h3>M P Coding Club is a  <span> coding club </span> of MANUU Polytechnic Hyderabad. M P Coding Club aims to establish a coding culture on campus, reaching every student passionate about coding. The club's motto is to Create-Build-Innovate. <a class="smoothscroll" href="#about"> Start scrolling</a>
+            and learn more <a class="smoothscroll" href="#about">about mpcodingclub</a>.</h3>
+            <hr />
+            <ul class="social">
+               <li><a target="" href=""><i class="fa fa-facebook"></i></a></li>
+               <li><a target="" href="https://www.instagram.com/mpcodingclub/"><i class="fa fa-instagram"></i></a></li>
+               <li><a target="" href="https://github.com/mpcodingclub"><i class="fa fa-github"></i></a></li>
+               <li><a target="" href=""><i class="fa fa-linkedin"></i></a></li>
+               <li><a target="" href="https://www.youtube.com/channel/UCYyry7e_by-d8Ern1rtvN2g"><i class="fa fa-youtube"></i></a></li>
+
+            </ul>
+         </div>
+      </div>
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
+
+   </header> <!-- Header End -->
+
+
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+
+      <div class="row">
+
+         <div class="three columns">
+
+            <img   src="images/logo.png" alt="" />
+
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h2>About MANUU Polytechnic Coding Club</h2>
+
+            <p>Hey Folks! This is an initiative by the students of the college to build a coding club
+			that will serve the purpose of providing the environment for coders to flourish and shine. 
+			We will create a platform which allows students to gain assistance and mentorship to enhance 
+			their coding ability. Our aim is to propagate the enthusiasm for coding in the institute and 
+			especially amongst freshmen. Moreover, the best skilled coders will be there to guide you 
+			through the process. This endeavour is not just for creating a culture for competitive coding but
+			we also will mentor you in technologies like Machine Learning , Web Development , Android App
+			Development and many more. So come forward and be a part of MANUU Polytechnic Coding Clubs family.
+            </p>
+
+
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section> 
+   <!--======================================= About Section End=================================-->
+
+
+
+
+
+
+
+<!--===========================================Our courses section=========================================-->
+
+
+
+<section id="courses">
+
+      <div class="row">
+
+         <div class="twelve columns collapsed">
+
+            <h1>Check Out Our Courses</h1>
+
+            <!-- portfolio-wrapper -->
+            <div id="courses-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+
+          	   <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-01" title="">
+                        <img alt="" src="images/portfolio/coffee.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Programming in C</h5>
+                              <p>This Course is provided by MANUU Polytechnic coding club, That can be help you learn the C Programming Language from Basics </p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-02" title="">
+                        <img alt="" src="images/portfolio/console.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Basic Web Development</h5>
+                  <p>This Course is provided by MANUU Polytechnic coding club, That can be help you learn the Website Development from Basics.</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-03" title="">
+                        <img alt="" src="images/portfolio/judah.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>OOPS Through CPP</h5>
+                              <p>This Course is provided by MANUU Polytechnic coding club, That can be help you learn the OOPS Through CPP Language from Basics.</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-04" title="">
+                        <img alt="" src="images/portfolio/into-the-light.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					    <h5>Computer Fundamentals</h5>
+                                <p>This Course is provided by MANUU Polytechnic coding club, That can be help you learn the Fundamentals of Computer from Basics.</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+            </div> <!-- portfolio-wrapper end -->
+
+         </div> <!-- twelve columns end -->
+
+
+         <!----------------------------------Modal Popup--------------------------------------------------------------- -->
+
+         <div id="modal-01" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-coffee.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Programming in C</h4>
+			      <p>This Course is provided by MANUU Polytechnic coding club, That can be help you learn the C Programming Language from Basic. </p>
+            
+		      </div>
+
+            <div class="link-box">
+               <a href="https://www.youtube.com/watch?v=23kM8MMI2w0&list=PLqwOeAoCo9Eq7n_9l_ffZ30GEJfjbvKqW" target="_blank">Click to Watch</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-01 End -->
+
+         <div id="modal-02" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-console.jpg" alt="" />
+
+		      <div class="description-box">
+			     <h5>Basic Web Development</h5>
+                  <p>This Course is provided by MANUU Polytechnic coding club, That can be help you learn the Website Development from Basic.</p>
+               </div>
+          	<div class="link-box">
+               <a href="https://www.youtube.com/watch?v=aMjXafb0jFs&list=PLqwOeAoCo9Er8v7LnaLej6jR4Ezh924VK" target="_blank">Click to Watch</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div>   <!-- modal-02 End -->
+
+         <div id="modal-03" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-judah.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>OOPS Through CPP</h4>
+                              <p>This Course is provided by MANUU Polytechnic coding club, That can be help you learn the OOPS Through CPP Language from Basics.</p>
+              
+		      </div>
+
+            <div class="link-box">
+               <a href="https://www.youtube.com/watch?v=grnkWJtSV2A&list=PLqwOeAoCo9ErvWqzPf-ZUVOMGXQwN3LoO" target="_blank">Click to Watch</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-03 End -->
+
+         <div id="modal-04" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-intothelight.jpg" alt="" />
+
+		      <div class="description-box">
+			    <!--  <h4>Comming Soon</h4>
+                  <p>This Course is provided by MANUU Polytechnic coding club, That can be help you learn the Fundamentals of Computer from Basics.</p>
+               -->
+		      </div>
+
+            <div class="link-box">
+               <!--<a href="" target="_blank">Details</a>-->
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-04 End -->
+
+      <!--   <div id="modal-05" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-farmerboy.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>TELEGRAM-BOT</h4>
+                   <p>A bot for telegram group of codeshows is open for development. So, contribute to the Codeshows/Telegram-bot development project.</p>
+               
+		      </div>
+
+            <div class="link-box">
+               <a href="https://github.com/Codeshows/telegram-bot" target="_blank">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div> modal-05 End -->
+
+
+      </div> <!-- row End -->
+
+   </section> <!-- Portfolio Section End-->
+
+
+
+<!--==========================================our courses section end================================-->
+
+
+
+
+
+   
+ 
+
+
+   <!--======================================= Portfolio Section================================== -->
+   <section id="portfolio">
+
+      <div class="row">
+
+         <div class="twelve columns collapsed">
+
+            <h1>Check Out Some of Our Projects</h1>
+
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+
+
+               <a href="https://mpcodingclub.github.io/Gradeup/" title="">
+          	   <div class="columns portfolio-item">
+                  <div class="item-wrap">
+                        <img alt="" src="images/portfolio/gradeup.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Gradeup</h5>
+                                  <p>This is a Web Application for MANUU Polytechnic Students, That can be help the Students to find the previous year Question Papers and all subjects notes.</p>
+          					   </div>
+                        </div>
+                  </div>
+          		</div> <!-- item end -->
+                </a>
+
+               <a href="https:https://github.com/mpcodingclub/mpcc.github.io.git" title="">
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+                        <img alt="" src="images/portfolio/mpcc.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>mpcodingclub's Website</h5>
+                                  <p>Developing Website for College Coding Club.</p>
+          					   </div>
+                        </div>
+                  </div>
+          		</div> <!-- item end -->
+				</a>
+				
+				
+				
+				
+               <a href="http://shopezy.ultimatefreehost.in/" title="">
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+                        <img alt="" src="images/portfolio/shopezy.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+    			               <h5>Shopezy</h5>
+                               <p>Developing a Web Application for Online Shopping.</p>
+          				  </div>
+                        </div>
+                     </div>
+          		</div> <!-- item end -->
+                </a>
+			   
+			   
+			   
+			   <a href="https://mpcodingclub.github.io/ppgenerator/" >
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                    
+                        <img alt="" src="images/portfolio/ppgen.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Privacy Policy Generator</h5>
+                              <p>Here you can Generate Privacy Policy for your Website for Free.</p>
+          					   </div>
+                        </div>
+                        <!--<div class="link-icon"><i class="icon-plus"></i></div>-->
+                     
+
+                  </div>
+          		</div> <!-- item end -->
+                </a>
+				
+				
+             <!--  <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-05" title="">
+                        <img alt="" src="images/portfolio/farmerboy.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>TELEGRAM-BOT</h5>
+                              <p>A bot for telegram group of codeshows is open for development. So, contribute to the Codeshows/Telegram-bot development project.</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div>  item end -->
+
+               
+
+            </div> <!-- portfolio-wrapper end -->
+
+         </div> <!-- twelve columns end -->
+
+   </section>
+   <!--===================================== Portfolio Section End==================================-->
+
+
+  
+  
+  
+  
+
+   <!--====================================== Thoughts Section============================================= -->
+   <section id="testimonials">
+
+      <div class="text-container">
+
+         <div class="row">
+
+            <div class="two columns header-col">
+
+               <h1><span>Quote of the Day</span></h1>
+
+            </div>
+
+            <div class="ten columns flex-container">
+
+               <div class="flexslider">
+
+                  <ul class="slides">
+
+                     <li>
+                        <blockquote>
+                           <p>Your work is going to fill a large part of your life, and the only way to be truly satisfied is
+                           to do what you believe is great work. And the only way to do great work is to love what you do.
+                           If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know.
+                           </p>
+                           <cite>Steve Jobs</cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
+                     <li>
+                        <blockquote>
+                           <p>Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the Universe trying to produce bigger and better idiots. So far, the Universe is winning.
+
+                           </p>
+                           <cite>Rick Cook</cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+					 
+					 <li>
+                        <blockquote>
+                           <p>All problems in computer science can be solved by another level of indirection.</p>
+                           <cite>David Wheeler</cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+					 
+					  <li>
+                        <blockquote>
+                           <p>If we wish to count lines of code, we should not regard them as ‘lines produced’ but as ‘lines spent.</p>
+                           <cite>Edsger Dijkstra</cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+					 
+
+                  </ul>
+
+               </div> <!-- div.flexslider ends -->
+
+            </div> <!-- div.flex-container ends -->
+
+         </div> <!-- row ends -->
+
+       </div>  <!-- text-container ends -->
+
+   </section> <!-- Testimonials Section End-->
+
+
+   <!-- Contact Section
+   ================================================== -->
+   <section id="contact">
+
+
+        <!-- <h1><span>Team mpcodingclub</span></h1> <br> <br> <br>
+         <div class="row">
+              <div class="founders col-md-4">
+                <div class="heading1">FOUNDERS</div>
+                <ul>
+                  <li>1. Md Najeeb</li>
+                  <li>2. Saif Ali</li>
+                </ul>
+              </div>
+              <div class="mentors col-md-4">
+                <div class="heading1">Team</div>
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+
+             <!-- <div class="submentors col-md-4">
+                <div class="heading1">  </div>
+                <ul>
+                </ul>
+              </div>-->
+
+       	 </div>
+        <h1><a href = "team1.html">Our Team </a></h1> <br><hr>
+    <h1><a href = "https://docs.google.com/forms/d/e/1FAIpQLSesyqgx6qLh0Ic8EtQLeSDlbREdFbOqjDCrgmCHGjKgfGYHVg/viewform?usp=sf_link">Feedback Form</a></h1> <br>
+
+   </section><!-- Contact Section End-->
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+               <li><a target="" href=""><i class="fa fa-facebook"></i></a></li>
+               <li><a target="" href="https://www.instagram.com/mpcodingclub/"><i class="fa fa-instagram"></i></a></li>
+               <li><a target="" href="https://github.com/mpcodingclub"><i class="fa fa-github"></i></a></li>
+               <li><a target="" href=""><i class="fa fa-linkedin"></i></a></li>
+               <li><a target="" href="https://www.youtube.com/channel/UCYyry7e_by-d8Ern1rtvN2g"><i class="fa fa-youtube"></i></a></li>
+
+            </ul>
+
+             <ul class="copyright">
+               <li> &copy; Copyright 2020</li>
+               <li>Design by <a href="index.html" title="Styleshout" target="">mpcodingclub</a></li>   
+            </ul> 
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+
+   <script type="text/javascript">
+      $(document).ready(function () {
+          setTimeout(function () {
+            $('body').addClass('loaded');
+            $('#loader-wrapper').remove(); //no need to continue displaying the preloader, wastes cpu.
+          }, 2000);
+        });
+   </script>
+
+</body>
+
+</html>
